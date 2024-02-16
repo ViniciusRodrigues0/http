@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br><br>
+    <center>
+        <a href="delete.html">Sair da Torcida</a>
+            <a href="post.html">Cadastrar-se</a>
+            <a href="put.html">Atualizar dados</a>
+            <a href="get.html">Torcedores</a>
+            <br><br><br><br><br><br>
+        <main>
+            <h3>Atualizar dados</h3>
+                <label>ID:</label>
+                <input type="text" id="id" readonly><br><br>
+                <label>Nome:</label>
+                <input type="text" id="nomeAtualizar"><br>
+                <br>
+                <label>Idade:</label>
+                <input type="text" id="idadeAtualizar"><br>
+                <br>
+                <label>CPF:</label>
+                <input type="text" id="cpfAtualizar" placeholder="Digite o CPF para busca">
+                <br><br>
+                <input type="button" onclick="buscarDados()" value="Buscar">
+                <input type="button" onclick="atualizarDados()" value="Atualizar">
+            
+        </main>        
+    </center> 
+
+    <script src="code.js"></script>
+</body>
