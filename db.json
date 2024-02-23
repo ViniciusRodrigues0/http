@@ -18,5 +18,57 @@
       "cpf": "999.888.777-66",
       "id": "5"
     }
+  ],
+  "usuario": [
+    {
+      "email": "silas@senai",
+      "senha": "silas",
+      "id": "1"
+    },
+    {
+      "email": "testeee",
+      "senha": "teste",
+      "id": "2"
+    },
+    {
+      "email": "",
+      "senha": "",
+      "id": "3"
+    },
+    {
+      "email": "ttewr",
+      "senha": "11",
+      "id": "4"
+    },
+    {
+      "email": "qqq",
+      "senha": "qqq",
+      "id": "5"
+    },
+    {
+      "email": "",
+      "senha": "",
+      "id": "6"
+    },
+    {
+      "id": "af68",
+      "email": "123",
+      "senha": "123"
+    },
+    {
+      "id": "294d",
+      "email": "cunha@a",
+      "senha": "12344321"
+    },
+    {
+      "email": "123",
+      "senha": "123",
+      "id": "fyyRdrP"
+    },
+    {
+      "email": "123",
+      "senha": "123",
+      "id": "Jb3hYgg"
+    }
   ]
 }

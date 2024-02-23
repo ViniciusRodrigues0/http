@@ -95,9 +95,9 @@ function deletarDados() {
 .then(response => response.json())
 .then(data => {
     const tabela = document.getElementById('tabela-corpo');
-    //Utilizado o loop ForEach para interar cada objeto no array retornado a API
+    
     data.forEach((objeto) => {
-        //Adicionado essa string de template ao conteudo HTML do corpo da tabela.
+        
         const linha = `<tr>
             <td>${objeto.id}</td>
             <td>${objeto.nome}</td>
@@ -107,3 +107,66 @@ function deletarDados() {
         tabela.innerHTML += linha;
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+function fazerLogin(){
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+
+
+    fetch('http://localhost:3000/usuario')
+    .then(response => response.json())
+    .then(data =>{
+        
+        
+        const pessoa = data.find(p => p.
+            email === email && p.senha == senha);
+
+            if(pessoa){
+                window.location.href = "delete.html";
+            }else{
+                alert("Cadastro não encontrado!");
+            }
+    })
+}
+
+
+
+
+
+
+function enviarCadastro(){
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+    const confsenha = document.getElementById("confsenha").value;
+
+
+   
+    if(senha==confsenha){
+
+        
+        fetch('http://localhost:3000/usuario',{
+            method: 'POST' ,
+
+            headers:{
+                'Content-Type':
+                'application/json'
+            },
+            body: JSON.stringify({
+                email: email, senha: senha, 
+            })
+        })
+        .then(response => response.json())
+
+       
+        
+
+    }else{
+        alert("As senhas inseridas não são iguais");
+    }
+   
+}
+
+function chamaBebe(){
+window.location.href ="login.html"
+}
